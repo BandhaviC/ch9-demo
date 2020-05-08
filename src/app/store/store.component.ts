@@ -12,6 +12,8 @@ export class StoreComponent {
   public selectedCategory = null;
   public productsPerPage = 4;
   public selectedPage = 1;
+  service: any;
+  items: any;
 
   constructor(
     private repository: ProductRepository,
