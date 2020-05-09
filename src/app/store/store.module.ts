@@ -7,6 +7,7 @@ import { CartSummaryComponent } from "./cartSummary.component";
 import { CartDetailComponent } from "./cartDetail.component";
 import { CheckoutComponent } from "./checkout.component";
 import { RouterModule } from "@angular/router";
+import { FilterPipe } from "../pipe/filter.pipe";
 
 @NgModule({
   imports: [ModelModule, BrowserModule, FormsModule, RouterModule],
@@ -15,6 +16,7 @@ import { RouterModule } from "@angular/router";
     CartSummaryComponent,
     CartDetailComponent,
     CheckoutComponent,
+    FilterPipe,
   ],
   exports: [StoreComponent, CartDetailComponent, CheckoutComponent],
 })

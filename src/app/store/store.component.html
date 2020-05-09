@@ -12,7 +12,7 @@
       />
       <ul>
         <li *ngFor="let name of products | filter: searchText">
-          {{ name }}
+          <td>{{ products.name }}</td>
         </li>
       </ul>
 
