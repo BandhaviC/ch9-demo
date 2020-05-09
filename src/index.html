@@ -9,5 +9,13 @@
   </head>
   <body class="m-2">
     <app>SportsStore Will Go Here</app>
+    <div ng-app="SportsStore" ng-controller="charactersCtrl">
+      <input ng-model="searchText" placeholder="Search Products" />
+      <ul>
+        <li ng-repeat="name in products | filter : searchText">
+          {{ c }}
+        </li>
+      </ul>
+    </div>
   </body>
 </html>

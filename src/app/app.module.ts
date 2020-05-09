@@ -7,10 +7,12 @@ import { StoreComponent } from "./store/store.component";
 import { CartDetailComponent } from "./store/cartDetail.component";
 import { CheckoutComponent } from "./store/checkout.component";
 import { StoreFirstGuard } from "./storeFirst.guard";
-
+import { FormsModule } from "@angular/forms";
+import { FilterPipe } from "./pipe/filter.pipe";
 @NgModule({
   imports: [
     BrowserModule,
+    FormsModule,
     StoreModule,
     RouterModule.forRoot([
       {
@@ -38,7 +40,7 @@ import { StoreFirstGuard } from "./storeFirst.guard";
     ]),
   ],
   providers: [StoreFirstGuard],
-  declarations: [AppComponent],
+  declarations: [AppComponent, FilterPipe],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

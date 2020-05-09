@@ -12,8 +12,18 @@ export class StoreComponent {
   public selectedCategory = null;
   public productsPerPage = 4;
   public selectedPage = 1;
-  service: any;
-  items: any;
+  name = "Angular";
+  product = [
+    "Kayak",
+    "Lifejacket",
+    "Soccer Ball",
+    "Corner Flags",
+    "Stadium",
+    "Thinking Cap",
+    "Unsteady Chair",
+    "Human Chess Board",
+    "Bling Bling King",
+  ];
 
   constructor(
     private repository: ProductRepository,
